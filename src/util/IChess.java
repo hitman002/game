@@ -33,7 +33,12 @@ public interface IChess {
   boolean compare(int x,int y,int type);
   /** 功能：初始化棋盘，默认棋牌每个位置初始值为：0；
    */
+  
+  public void printChessType(int x ,int y,int type);
+  
   void ResetGame();
+  
+  
   /**  功能：判断五子棋人机电脑默认为白方，制定白方下棋规则，给定白子位置并以返回白子坐标
    * 作者：章培舜  时间：2016-09-23
    * @param x 横坐标

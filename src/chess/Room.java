@@ -509,6 +509,11 @@ public class Room extends JFrame {
     visible = false;
     chessPanel.Moves = 0;
   }
+  
+  public void printChessType(int x ,int y,int type){
+	  chessPanel.getChessimpl().printChessType(x, y,type);
+  }
+  
 
   public void win() {
     if(chessPanel.model==0) {
